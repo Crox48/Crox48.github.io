@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>P2P Chat</title>
+    <style>
+        body
+        {
+            background-color: grey;
+        }
+
+        input, input:focus
+        {
+            width: 200px;
+            padding: 0;
+            background: none;
+            border: medium inset black;
+            outline: none;
+            text-align: center;
+        }
+
+        #chat
+        {
+            width: 200px;
+            height: 300px;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            border: medium inset black;
+        }
+
+        .msg_out
+        {
+            margin-left: auto;
+            border: thin outset black;
+            word-wrap: break-word;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Enter Friend's Pubkey
+        <div>
+            <input type="text">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        Chat
+        <div id="chat"></div>
+        <input type="text" id="input_chat">
+    </div>
+
+</body>
+<script>
+    const input_chat = document.getElementById("input_chat");
+    const chat = document.getElementById("chat");
+
+    input_chat.addEventListener("keydown", function (event)
+    {
+        if (event.key !== 'Enter')
+            return;
+
+        chat.innerHTML += `<div class="msg_out">${this.value}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+
+        this.value = "";
+    })
+    
+</script>
+</html>
