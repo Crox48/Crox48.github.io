@@ -1,0 +1,55 @@
+body
+{
+    height: 100vh;
+
+    /*background-image: url('./Bilder/background.svg');
+    background-repeat: no-repeat;
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;*/
+}
+
+.wrap-layer{
+    position: relative;
+}
+
+.text-layer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+.background-layer{
+    size:100px 100px;
+}
+
+.loremipsum
+{
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    font-family:'CaskaydiaCove NF';
+    color:#f9f9f9;
+    stroke-width:1.06827;
+    padding: 50px;
+}
+#loremipsumHeader
+{
+    font-size:256.385px;
+    letter-spacing:2.58521px; 
+    stroke-width:1.06827px;
+    margin-bottom: 0px;
+}
+#loremipsumUnderline
+{
+    font-size:28.4872px;
+}
+#loremipsumParagraph
+{
+    font-family:'Atkinson Hyperlegible';
+    font-size:25.63846857px;
+}
