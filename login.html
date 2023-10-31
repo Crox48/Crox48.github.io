@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>P2P Chat</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login">
-        <label>Enter Public Key</label>
-        <input type="text" placeholder="128 Bit Pubkey">
-        <button>Connect</button>
-    </div>
 
+    <form action="/login">
+        <label>
+            PubKey:
+            <br>
+            <input type="text" name="key"/>
+        </label>
+        <br>
+        <input type="submit" value="Connect" />
+        <br>
+        <a href="">
+            No Keys?
+        </a>
+    </form>
 
 </body>
 </html>

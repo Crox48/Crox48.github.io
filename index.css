@@ -2,78 +2,54 @@ body
 {
     height: 100vh;
 
-    background-image: url("https://kryptovaluta.info/wp-content/uploads/2021/10/nettverk.jpg");
+    /*background-image: url('./Bilder/background.svg');
+    background-repeat: no-repeat;
+    background-color: blue;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    overflow: hidden;
+    background-size: 100%;*/
 }
 
-.login
-{
+.wrap-layer{
+    position: relative;
+}
+
+.text-layer{
     position: absolute;
-
-    width: 700px;
-    height: 200px;
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    border: medium outset black;
-    background: rgba(150, 150, 150, .95);
-    box-shadow: 5px 5px 5px black;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
 
-.login input
-{
-    position: absolute;
-
-    width: 75%;
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    outline: none;
-    text-align: center;
-    color: rgba(0, 0, 0, .75);
-    background: none;
-    border: medium inset black;
+.background-layer{
+    size:100px 100px;
 }
 
-.login label
+.loremipsum
 {
-    position: absolute;
-
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
-
-    color: rgba(0, 0, 0, .75);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: x-large;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    font-family:'CaskaydiaCove NF';
+    color:#f9f9f9;
+    stroke-width:1.06827;
+    padding: 50px;
 }
-
-.login button
+#loremipsumHeader
 {
-    position: absolute;
-
-    width: 35%;
-
-    left: 50%;
-    bottom: 5%;
-    transform: translateX(-50%);
-
-    color: rgba(0, 0, 0, .75);
-    background: none;
-    border: medium outset black;
+    font-size:256.385px;
+    letter-spacing:2.58521px; 
+    stroke-width:1.06827px;
+    margin-bottom: 0px;
 }
-
-.login button:hover
+#loremipsumUnderline
 {
-    cursor: pointer;
-    background: rgba(200, 200, 200, .5);
+    font-size:28.4872px;
+}
+#loremipsumParagraph
+{
+    font-family:'Atkinson Hyperlegible';
+    font-size:25.63846857px;
 }
